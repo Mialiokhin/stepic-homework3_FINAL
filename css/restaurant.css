@@ -1,0 +1,146 @@
+.header-conteiner {
+  box-shadow: none;
+}
+
+.hero {
+  padding-top: 72px;
+}
+.restorans {
+  padding-top: 128px;
+}
+
+.navtab {
+  padding-top: 32px;
+}
+/* } временно */
+
+/* главная картинка  с именем ресторана */
+.bigeat {
+  display: flex;
+  height: 364px;
+  background: url(../img/restaurant/s-header.jpg);
+  background-size: cover;
+  /* padding-top: 80px;
+  padding-left: 81px; */
+  align-items: center;
+}
+
+.pyshkin {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 204px;
+  max-width: 389px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+
+.pyshkin1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.pyshkin2 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 40px 0 40px;
+}
+.pyshkin21 {
+  display: flex;
+  align-items: center;
+}
+.pyshkin22 {
+  display: flex;
+  align-items: center;
+}
+.pyshkin22 > a {
+  background: #262626;
+  border-radius: 16px;
+  color: white;
+  align-items: center;
+}
+.pyshkin22 > a:hover {
+  color: white;
+}
+
+/* навигация */
+
+.nav-tabs {
+  border: none;
+}
+.presentation {
+  border: none;
+}
+.nav-item > .active {
+  border: none;
+}
+.nav-link:hover {
+  border: none;
+}
+li > .nav-item:focus-visible {
+  border: none;
+  outline: none;
+}
+
+/* карточки */
+
+.img-w > img {
+  width: 100%;
+}
+/* .card-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+} */
+
+/* медиа запросы */
+
+@media screen and (max-width: 768px) {
+  .bigeat {
+    background: url(../img/restaurant/s-header-md.jpg);
+  }
+  .pyshkin {
+    max-width: 432px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bigeat {
+    background: url(../img/restaurant/s-header-xs.jpg);
+    height: 255px;
+    background-size: 100% 100%;
+    padding-top: 203px;
+  }
+  .pyshkin {
+    max-width: 308px;
+    max-height: 180px;
+    /* padding-top: 131px; */
+    margin: auto;
+  }
+  .b222 {
+    justify-content: center;
+  }
+  .header-conteiner {
+    padding: 0;
+    margin: 0;
+  }
+  .pyshkin2 {
+    padding: 0;
+  }
+  .img-w {
+    width: 100px;
+  }
+  .card-body {
+    overflow-x: hidden;
+  }
+  .card-title {
+    overflow-x: hidden;
+  }
+  .text-muted {
+    overflow-x: hidden;
+  }
+}
