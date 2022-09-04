@@ -143,4 +143,7 @@ li > .nav-item:focus-visible {
   .text-muted {
     overflow-x: hidden;
   }
+  .navtab {
+    padding-top: 80px;
+  }
 }
